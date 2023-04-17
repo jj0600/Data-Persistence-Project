@@ -22,7 +22,7 @@ public class MainManager : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);// DATA PERSISTENCE
         LoadData();
     }
 
@@ -45,7 +45,9 @@ public class MainManager : MonoBehaviour
     {
         return bestScore;
     }
+
 // DATA PERSISTENCE
+
     [System.Serializable]
     class SaveData
     {
